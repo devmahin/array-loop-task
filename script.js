@@ -63,6 +63,18 @@ const cars = [
   ];
 
 
+  for(let i=0; i<cars.length-1; i++){
+    for(let j=i+1; j<cars.length; j++){
+        if(cars[i].type > cars[j].type){
+            const tem = cars[i];
+            cars[i] = cars[j];
+            cars[j] = tem;
+        }
+    }
+}
+console.log(cars)
+
+
 
 
 // cars.sort(function(a,b){
